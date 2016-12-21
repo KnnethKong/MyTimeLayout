@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/precent_liner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#339966"
+        android:orientation="vertical"
+        app:layout_widthPercent="20%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="225352525" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="225352525" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/percent_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/precent_liner"
+        android:background="#336699"
+        android:src="@mipmap/ic_launcher"
+        app:layout_widthPercent="20%" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/percent_img"
+        android:background="#bababa"
+        android:text="支付成功交易状态"
+        app:layout_widthPercent="50%" />
+
+</android.support.percent.PercentRelativeLayout>
